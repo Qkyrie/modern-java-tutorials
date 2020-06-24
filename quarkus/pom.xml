@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>quarkus</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <name>quarkus</name>
+    <packaging>pom</packaging>
+
+    <groupId>org.diplr</groupId>
+
+    <modules>
+        <module>quarkus-getting-started</module>
+        <module>quarkus-getting-started-async</module>
+        <module>quarkus-websocket</module>
+    </modules>
+
+    <properties>
+        <quarkus.version>1.3.2.Final</quarkus.version>
+        <failsafe.version>2.22.0</failsafe.version>
+        <surefire.version>2.22.0</surefire.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.quarkus</groupId>
+                <artifactId>quarkus-bom</artifactId>
+                <version>${quarkus.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>

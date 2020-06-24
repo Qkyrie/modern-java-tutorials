@@ -1,5 +1,0 @@
-rootProject.name = theName
-
-include 'eureka-server'
-include 'notifications-service'
-include 'api-service'

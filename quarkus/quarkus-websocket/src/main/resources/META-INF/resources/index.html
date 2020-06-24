@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.24.0/css/patternfly.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.24.0/css/patternfly-additions.min.css">
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css">
+</head>
+<body>
+<h1>Notification Example</h1>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+<script type="application/javascript">
+
+  $(document).ready(() => {
+    const ws = new WebSocket("ws://localhost:8080/notifications");
+
+    ws.onopen = () => {
+      console.log('opened connection')
+    };
+
+    ws.onmessage = (message) => {
+      toastr.success(message.data, 'Notification');
+    };
+  });
+
+</script>
+</body>
+</html>
