@@ -1,11 +1,7 @@
-# Spring Boot Netflix Examples - Part 1: Eureka
+# Spring Boot Netflix Examples - Deprecated Material
 
-> This is a repository accompanying the blogpost posted at https://diplr.org/the-netflix-stack-using-spring-boot/
+> This is a repository accompanying the blogposts posted at 
 
-# Spring Boot Netflix Examples - Part 2: Hystrix
-
-> This is a repository accompanying the blogpost posted at https://diplr.org/the-netflix-stack-using-spring-boot-part-2-hystrix/
-
-# Spring Boot Netflix Examples - Part 3: Feign
-
-> This is a repository accompanying the blogpost posted at https://diplr.org/the-netflix-stack-using-spring-boot-part-3-feign/
+- https://diplr.org/the-netflix-stack-using-spring-boot/
+- https://diplr.org/the-netflix-stack-using-spring-boot-part-2-hystrix/
+- https://diplr.org/the-netflix-stack-using-spring-boot-part-3-feign/
